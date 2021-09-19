@@ -11,9 +11,9 @@ const UseRefBasics = () => {
     e.preventDefault();
   }
   return <>
-  <form action="" className="form" onSubmit={handleSubmit}>
-    <input type="text" ref={refContainer/>
-    <button type="button" className="btn">submit</button>
+  <form className="form" onSubmit={handleSubmit}>
+    <input type="text" ref={refContainer} />
+    <button type="submit" className="btn">submit</button>
   </form>
   </>;
 };

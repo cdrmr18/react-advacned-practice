@@ -10,6 +10,9 @@ const UseRefBasics = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
   }
+  useEffect(()=>{
+    refContainer.current.focus();
+  })
   return <>
   <form className="form" onSubmit={handleSubmit}>
     <input type="text" ref={refContainer} />
